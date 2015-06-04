@@ -15,7 +15,6 @@ import com.youxing.common.utils.SignTool;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +28,6 @@ public class HttpService {
 
     private volatile static RequestQueue requestQueue;
 
-    /** 返回RequestQueue单例 **/
     public static RequestQueue getQueue() {
         if (requestQueue == null) {
             synchronized (HttpService.class) {
