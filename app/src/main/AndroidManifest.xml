@@ -23,14 +23,34 @@
                 <data android:scheme="tq" android:host="home"/>
             </intent-filter>
         </activity>
-        <activity android:name=".order.OrderListActivity"
+        <activity android:name=".order.OrderManagerActivity"
             android:label="订单管理">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="tq" android:host="orderlist"/>
+                <data android:scheme="tq" android:host="ordermanager"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ActivityManagerActivity"
+            android:label="活动管理">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tq" android:host="activitymanager"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ActivityDetailActivity"
+            android:label="活动管理">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tq" android:host="activitydetail"/>
             </intent-filter>
         </activity>
     </application>

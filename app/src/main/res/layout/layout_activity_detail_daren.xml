@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.youxing.tongqu.activity.view.DetailDarenView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <com.youxing.common.views.YXNetworkImageView
+        android:id="@+id/daren_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/daren_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="amy老师是美吉姆国际早教中心的资深老师，毕业于华东师范大学英语教育专业，深受宝宝喜爱。"
+        android:textColor="@color/text_deep_gray"
+        android:textSize="@dimen/text_medium"/>
+
+</com.youxing.tongqu.activity.view.DetailDarenView>

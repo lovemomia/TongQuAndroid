@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.youxing.tongqu.activity.view.ActivityListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="6dp">
+
+
+    <com.youxing.common.views.YXNetworkImageView
+        android:id="@+id/icon"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/user"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="探秘自然博物馆，和大恐龙亲密约会！"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_alignTop="@id/icon"
+        android:layout_toRightOf="@id/icon"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6月5日  13:00-15:00"
+        android:layout_toRightOf="@id/icon"
+        android:textSize="12sp"
+        android:layout_above="@+id/num"
+        android:paddingBottom="2dp"/>
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5人已报名"
+        android:layout_alignBottom="@id/icon"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/icon"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥50元"
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</com.youxing.tongqu.activity.view.ActivityListItem>

@@ -45,8 +45,8 @@ public class HomeActivity extends TQActivity implements AdapterView.OnItemClickL
     }
 
     private void setGridView(GridView grid) {
-        menus.add(new GridMenu(R.drawable.user, "订单管理", "tq://orderlist"));
-        menus.add(new GridMenu(R.drawable.user, "活动管理", "tq://activitylist"));
+        menus.add(new GridMenu(R.drawable.user, "订单管理", "tq://ordermanager"));
+        menus.add(new GridMenu(R.drawable.user, "活动管理", "tq://activitymanager"));
         menus.add(new GridMenu(R.drawable.user, "活动日程", "tq://activitydate"));
         menus.add(new GridMenu(R.drawable.user, "场地预约", "tq://placebook"));
         menus.add(new GridMenu(R.drawable.user, "用户评价", "tq://userfeedback"));

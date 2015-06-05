@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1、培养儿童人生技巧的游戏设计"
+        android:textColor="@color/text_deep_gray"
+        android:textSize="@dimen/text_medium"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在欧洲，对少儿的团队合作、沟通、创造性、领导能力等人生技巧培养的重视程度远远超过了一般的学科知识"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_medium"/>
+
+
+</LinearLayout>

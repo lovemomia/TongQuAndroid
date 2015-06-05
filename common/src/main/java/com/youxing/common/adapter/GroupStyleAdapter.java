@@ -1,6 +1,5 @@
 package com.youxing.common.adapter;
 
-import android.app.ActionBar;
 import android.content.Context;
 import android.graphics.Color;
 import android.view.View;
@@ -13,8 +12,6 @@ import android.widget.AbsListView;
  * Created by Jun Deng on 15/6/4.
  */
 public abstract class GroupStyleAdapter extends BasicAdapter {
-
-    public static final Object SECTION = new Object();
 
     private final Context context;
 
@@ -70,18 +67,21 @@ public abstract class GroupStyleAdapter extends BasicAdapter {
     abstract public View getViewForRow(View convertView, ViewGroup parent, int section, int row);
 
     public View getViewForSection(View convertView, ViewGroup parent, int section) {
-        View view;
-        if (convertView != null && convertView.getTag() == SECTION) {
-            view = convertView;
-        } else {
-            view = new View(context);
-            view.setBackgroundColor(Color.parseColor("#F4F4F4"));
-            view.setTag(SECTION);
+        View view = new View(context);
+        view.setBackgroundColor(Color.parseColor("#F4F4F4"));
+        int height = getHeightForSectionView(section);
+        if (height >= 0) {
             view.setLayoutParams(new AbsListView.LayoutParams(AbsListView.LayoutParams.MATCH_PARENT, getHeightForSectionView(section)));
         }
         return view;
     }
 
+    /**
+     * 设置section高度，-1表示自适应
+     *
+     * @param section
+     * @return
+     */
     public int getHeightForSectionView(int section) {
         return 20;
     }
